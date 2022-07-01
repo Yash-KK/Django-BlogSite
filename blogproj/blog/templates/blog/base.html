@@ -6,7 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'blog/main.css' %}">
@@ -24,7 +24,7 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
                 {% if user.is_authenticated %}
-              <a class="nav-item nav-link" href="{% url 'blog-home' %}">HOME</a>
+              <a class="nav-item nav-link" href="{% url 'blog-home' %}"><strong> HOME  </strong></a>
               <a class="nav-item nav-link" href="{% url 'blog-about' %}">ABOUT</a>
             </div>
             <!-- Navbar Right Side -->
@@ -152,7 +152,7 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
           </ul>
-          <p class="text-center text-muted">&copy; Desphixs 2021</p>
+          <p class="text-center text-muted">&copy; InfoTech {% now 'Y' %}</p>
         </footer>
 
     </main>
